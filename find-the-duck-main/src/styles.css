@@ -1,0 +1,440 @@
+/*
+Yellow: #cfb220
+Mid-Blue: #1a67ab
+Light-blue: #307cbe
+Deep-Blue: #205889
+
+*/
+/*
+Yellow: #cfb220
+Mid-Blue: #1a67ab
+Light-blue: #307cbe
+Deep-Blue: #205889
+
+*/
+body{
+    background: #1a67ab;
+  }
+  
+  
+  
+  
+  /*
+  h1{color:#1a67ab}
+  */
+  /*-------------------------------------------------------------- Navbar --------------------------*/
+  .Navbar{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 10%;
+      background-color: yellow;
+    }
+  
+    .Navbar ul{
+      display:flex;
+      justify-content:flex-end;
+      list-style: none;
+    }
+  
+    .Navbar ul li{
+      display:flex;
+      justify-content:flex-end;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    /*
+    .mainbtn{
+      background-color: yellow;
+      border:none;
+      padding: 4px 4px;
+      text-align: center;
+      text-decoration: none;
+      font-size:50px;
+      margin: 1em;
+      width: 250px;
+      height: 100px;
+      transform: skew(-20deg);
+      align-items: center;
+    }*/
+    .mainbtn{
+      all:unset;
+      position:relative;
+      cursor:pointer;
+      font-size:50px;
+      margin: 1em;
+      width: 250px;
+      height: 100px;
+      transform: skew(-20deg);
+    }
+    button::after{
+      color:yellow;
+      content:'';
+      left: -11px;
+      top: -10px;
+      width:calc(500% + 20px);
+      height:calc(50% + 5px);
+  }
+  
+  button::before{
+    color:#1a67ab;
+      content:'';
+      left: -11px;
+      top: -10px;
+      width:calc(100% + 20px);
+      height:calc(50% + 5px);
+  }
+
+    .mainbtn a:visited{text-decoration:none;color:none;}
+    .mainbtn a{
+      text-decoration: none;
+      display:block;
+      padding:20px;}
+
+    .mainbtn div::after{
+      background:#1a67ab;
+      position:absolute;
+      right:0;
+      bottom:0;
+      width:5px;
+      height:5px;
+      transition:0.4s;
+    }
+
+    .mainbtn div span{
+      position:absolute;
+      width:120%;
+      height:120%;
+      transform: translate(-500%, -20px);
+      background:#205889;
+      transition: 0.4s;
+    }
+    .mainbtn:hover div span{
+      transform: translate(0, 0px);
+    }
+    .mainbtn:hover div::after{
+      background:yellow;
+      color:yellow;
+    }
+  
+
+    .mainbtn div{
+      position:relative;
+      display:inline-block;
+      overflow:hidden;
+      width:100%;
+      height:100%;
+      background:yellow;
+    }
+    .mainbtn p:hover{
+      position: absolute;
+      color:yellow;
+    }
+
+    .mainPageContainer{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    button div a{
+      color:#1a67ab;
+      position:relative;
+      text-decoration: none;
+      text-align:center;
+      letter-spacing: 2px;
+      font-size:50px;
+      font-weight:bold;
+      padding: 20px 80px;
+  }
+
+  button div a:hover{color:yellow;transition:0.4s;}
+  /*-------------------------------------------------------------- LoginContainer --------------------------*/
+  
+    .loginContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 7%;
+    }
+  
+  .fieldBox{
+    padding: 5%;
+    background-color: #307cbe;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+  }
+  .loginContainer  button{
+    background-color: yellow;
+    border:none;
+    color: #1a67ab;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5em;
+  }
+  
+  .loginContainer input{
+    width: 100%;
+    padding: 5%;
+    margin-top: 5%;
+    border:none;
+    background-color:#205889;
+    color: #f0f8ff;
+  }
+  .loginContainer  ::placeholder{
+  text-align: center;
+  color:white;
+  }
+  .loginContainer h1{color:white;}
+  .loginContainer button:hover{
+    background-color: rgb(202, 202, 12);
+    cursor: pointer;
+  }
+  /*-------------------------------------------------------------- RegisterContainer --------------------------*/
+  .registerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+  }
+  
+  
+  .registerContainer  button{
+  background-color: yellow;
+  border:none;
+  color: #1a67ab;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5em;
+  }
+  
+  .registerContainer input{
+  width: 100%;
+  padding: 5%;
+  margin-top: 5%;
+  border:none;
+  background-color:#205889;
+  color: #f0f8ff;
+  }
+  .registerContainer  ::placeholder{
+  text-align:center;
+  color:white;
+  }
+  .registerContainer h1{color:white;}
+  .registerContainer button:hover{
+  background-color: rgb(202, 202, 12);
+  cursor: pointer;
+  }
+  
+  
+  .test{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .tutorialContainer{
+    color:yellow;
+    text-align:center;
+  }
+  .tutorialVideo{
+    height:800px;
+    width:1000px;
+    display:flex;
+    justify-content:center;
+    margin: 0 auto;
+  }
+  .tutorialBtn{
+    width:50px;
+    height:50px;
+    text-decoration:none;
+    border:none;
+    background-color:yellow;
+    color:#1a67ab;
+  }
+
+  .tutorialBtn:hover{background-color:gold; cursor:pointer;}
+  /*-------------Table highscore-------------------*/
+  /*highscorecontainer*/
+
+  thead{
+    color:gold;
+    font-weight:bold;
+  }
+
+  .highscorecontainer{
+    color:white;
+    font-size: 20px;
+    margin: 0 auto;
+    height: auto;
+    width:660px;
+    box-shadow: inset 0 0 10px #000;
+    display:flex;
+    justify-content:center;
+  }
+
+  td{padding-left:20px;
+  padding-right:20px;}
+
+table{border-collapse:collapse;height:50px;}
+
+tr{border-bottom: 2px solid white;}
+.highscoreH1{
+  display:flex;
+  justify-content:center;
+  font-weight:bold;
+  color:gold;
+}
+.highscore1{
+  display:flex;
+  justify-content:center;
+
+}
+.highscore2{
+  font-weight:bold;
+  color:gold;
+  font-size:25px;
+}
+.highscore3{
+  font-weight:bold;
+  color:white;
+  font-size:25px;
+}
+
+.highscorebox{
+  position: absolute;
+  left:840px;
+}
+
+/*--------funfact-----*/
+
+.funFact{
+  color:yellow;
+  font-size:20px;
+  font-weight:bold;
+  display:flex;
+  justify-content:center;
+  animation:float 4s infinite linear;
+  transform:translateY(0);
+}
+@keyframes float{
+  30%{transform: translateY(8%) rotate(3deg);}
+  70%{transform: translateY(8%) rotate(-3deg);}
+}
+
+.mute{
+  text-decoration:none;
+  border:none;
+  height:25px;
+  width:25px;
+  background-color:yellow;
+}
+.gameStat{color:white;
+box-shadow: inset 0 0 10px gold;}
+
+.timerText{
+  position:absolute;
+  top:590px; 
+  user-select:none;
+  color: white;
+  left:840px;
+}
+
+#endscreenText{
+  font-size: 50px;
+  
+}
+
+
+#roundText{
+  position: absolute; 
+  top: 510px;
+  user-select:none;
+  left:840px;
+}
+
+#scoreText{
+  position:absolute;
+  top:550px;
+  user-select:none;
+  left:840px;
+}
+
+#personalText{
+  position:absolute;
+  top:630px;
+  user-select:none;
+  left:840px;
+}
+
+#duckspace{
+
+  position:absolute; 
+  user-select:none;
+}
+
+
+#errorText{
+  color: white; 
+  font-size:70px;
+}
+
+.profileImg{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  height:82px;
+  width:70px;
+
+}
+
+.profileBackground{
+  position:absolute; 
+  left:65%;
+  border:5px solid yellow;
+  background-color:lightgrey;
+}
+
+
+@media (max-width: 1050px){ 
+  .highscorebox{ 
+    position: absolute;
+    top:820px;
+    left: 0px;
+    overflow: auto;
+      }
+
+    .timerText{
+      position: absolute;
+      left:0px;
+      top:730px;
+      overflow: auto;
+    }
+    
+    #roundText{
+      position: absolute;
+      left: 0px;
+      top: 690px;
+      overflow: auto;
+    }
+
+    #scoreText{
+      position: absolute;
+      left: 0px;
+      top: 710px;
+      overflow: auto;
+    }
+    
+    #personalText{
+      position: absolute;
+      left: 0px;
+      top: 750px;
+      overflow: auto;
+    }
+}
